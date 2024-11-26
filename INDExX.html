@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FUNCIONES</title>
+</head>
+<body>
+    <script>
+
+// function Mensaje(nombre){
+
+//     console.log(`hola ${nombre}`)
+// }
+// Mensaje(prompt("ingrese el nombre"))
+
+// function.mensaje(){
+// console.log(`hola mundo`)
+// }
+// function.mensaje(){
+//     console.log(`hola mundo`)
+//     return mensaje
+
+// }
+// function.mensaje(){
+//     console.log(`hola mundo`)
+// }
+// function.mensaje(){
+//     console.log(`hola mundo`)
+//     return mensaje
+// }
+
+
+let continuar = true;
+while (continuar) {
+let num1=parseFloat(prompt("numero 1"))
+let num2=parseFloat(prompt("numero 2"))
+let operacion=prompt("operacion")
+const respuesta = prompt("¿Desea realizar otra operación? (si/no)");
+  continuar = respuesta.toLowerCase() === "si";
+
+
+console.log("¡Hasta luego!");
+
+
+
+
+console.log(calculadora(num1,num2,operacion));
+
+function calculadora(num1,num2,operacion){
+
+    let resultado;
+
+    switch(operacion){
+
+case "+":  
+resultado=suma(num1,num2);
+break;
+
+case "-":  
+resultado=resta(num1,num2);
+break;
+
+case "*":  
+resultado = multiplicacion(num1,num2);
+break;
+
+case "/":  
+   if(num2!=0){
+    resultado=divicion(num1,num2)
+   break
+}else{
+    console.log("no se puede dividir por 0")
+}
+default:
+console.log("opcion incorrecta")
+}
+return resultado
+}
+}
+function suma(num1,num2){
+return num1+num2
+}
+function resta(num1,num2){
+return num1-num2
+}
+function multiplicacion(num1,num2){
+return num1*num2
+}
+function divicion(num1,num2){
+return num1/num2
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </script>
+</body>
+</html>
